@@ -1,5 +1,12 @@
 name: Build APK
-on:
+on: name: build push:
+    branches: [ main ]
+  workflow_dispatch: # <-- Добавьте эту строку
+
+jobs:
+  build:
+    ...
+    
   workflow_dispatch:
   push:
     branches: [ main ]
