@@ -1,6 +1,5 @@
 name: Build APK
-on: name: build push:
-    branches: [ main ]
+on:
   workflow_dispatch: # <-- Добавьте эту строку
 
 jobs:
